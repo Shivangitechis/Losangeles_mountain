@@ -31,7 +31,7 @@ a {
   display: inline-block;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width:280px) and (max-width: 1400px) {
   body {
     width: 100%;
   }
@@ -44,11 +44,10 @@ a {
   width: 100% auto;
   height: 90vh;
 }
-.main {
+.main img.background{
   height: 90vh;
   width: 100%;
   position: relative;
-  background: url("img/background-main.png");
   background-size: 100% 100%;
 }
 .main .header {
@@ -89,7 +88,7 @@ a {
   top: 26%;
   z-index: 1;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .main .moon {
     height: 40px;
     width: 21px;
@@ -152,7 +151,7 @@ a {
   width: 138px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 400px) {
+@media screen and (min-width: 280px) and (max-width: 1400px) {
   .header2 .content1 {
     left: 9%;
   }
@@ -191,9 +190,11 @@ a {
 /*******************
 *** History ***
 *******************/
-
-.history {
-  background: url("img/background-history.png");
+.history{
+  position:relative;
+}
+.history img.background-history{
+  
   position: relative;
   height: 100vh;
   width: 100%;
@@ -312,7 +313,7 @@ a {
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 1200px) {
+@media screen and (min-width: 280px) and (max-width: 1400px) {
   .history .number1 {
     left: 10%;
     font: 120px sans-serif;
@@ -402,7 +403,7 @@ a {
   line-height: 36px;
 }
 
-@media screen and (min-width: 401px) and (max-width: 1200px){
+@media screen and (min-width: 280px) and (max-width: 1400px){
 .header3 .heading2 {
     font-size: 50px;
     position: absolute;
@@ -426,7 +427,7 @@ a {
   }
 
 
-@media screen and (min-width: 401px) and (max-width: 1200px) {
+@media screen and (min-width: 280px) and (max-width: 1400px) {
   .header3 .number2 {
     left: 5%;
     top: 4%;
@@ -458,8 +459,13 @@ a {
   height: 80vh;
   width: 100%;
   position: relative;
-  background: url("img/background-climb.png");
+  
   background-size: cover;
+}
+.climb .bg{
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
 }
 
 .climb .nav3 {
@@ -513,6 +519,28 @@ a {
     padding: 0px;
   }
 }
+@media screen and (max-width: 400px) {
+  .header3 .number2 {
+    position: absolute;
+    left: 2%;
+    font-size: 150px;
+    bottom: 5%;
+    color: #41516b;
+    opacity: 45%;
+}
+  .header3 .heading2 {
+  font-size: 33px;
+  left: 55%;
+  top: 13%;
+}
+  .header3 .h2text {
+  left: 50%;
+  top: 61%;
+  line-height: 15px;
+  font-size: 10px;
+}
+}
+
 
 /*******************
 *** Footer ***
